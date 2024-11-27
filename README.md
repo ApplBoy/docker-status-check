@@ -9,16 +9,37 @@ Hell, I'll do it one day.
 
 Just clone it, it's a python script.
 
-Well... You just need one thing.
+Well... You just need two things.
 
 ## Dependencies
 
+- Docker
 - Python 3
 
 There, that's it.
 
 ## Usage
 
+First, you need to set up your Discord webhook.
+Use environment variables to set it up.
+
+```bash
+export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/..."
+```
+
+Or, hardcode it in the script (don't forget to remove it before `git push`ing it).
+
+```python
+class CONFIG:
+
+    # Discord
+    DISCORD_WEBHOOK_URL = os.environ.get(
+        "DISCORD_WEBHOOK_URL",
+        "https://discord.com/api/webhooks/...",
+    )
+```
+
+Then you can run the script.
 As the script has a hashbang, you can just run it.
 
 ```bash
