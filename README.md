@@ -9,6 +9,10 @@ Hell, I'll do it one day.
 
 Just clone it, it's a python script.
 
+```bash
+git clone https://github.com/ApplBoy/docker-status-check.git
+```
+
 Well... You just need two things.
 
 ## Dependencies
